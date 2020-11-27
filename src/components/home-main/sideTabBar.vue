@@ -2,7 +2,7 @@
   <div class="page">
     <!-- 不存在子路由数组 -->
     <el-menu-item :index="row.path" v-if="!row.children">
-      <span>{{row.meta.title}}</span>
+      <span>{{ row.meta.title }}</span>
     </el-menu-item>
 
     <!-- 存在子路由数组 -->
@@ -14,7 +14,11 @@
         </template>
 
         <template>
-          <sideTabBar v-for="(item, j) in row.children" :row="item" :key="j"></sideTabBar>
+          <sideTabBar
+            v-for="(item, j) in row.children"
+            :row="item"
+            :key="j"
+          ></sideTabBar>
         </template>
       </el-submenu>
     </template>
@@ -32,9 +36,9 @@ export default {
       default: () => {
         return {};
       },
-      type: Object
-    }
-  }
+      type: Object,
+    },
+  },
 };
 </script>
 <style lang="less" scoped>

@@ -1,6 +1,10 @@
 <template>
   <div>
     <span @click="doClick">香蕉</span>
+    <a href="javascript:0">
+      这个链接点击之后不会做任何事情，如果去掉 void()，
+      点击之后整个页面会被替换成一个字符 0。
+    </a>
   </div>
 </template>
 
@@ -22,23 +26,14 @@ export default {
   },
   mounted() {},
   methods: {
-    doClick() {
-      this.$router.push({ name: "carrot" });
-    },
-    do() {
-      new Promise((resolve, reject) => {
-        reject("这是一个错误");
-      })
-        .then(res => {
-          console.log(res, "resolve");
-        })
-        .catch(error => {
-          console.log(error, "失败");
-        });
-    }
-  }
+    doClick() {},
+    do() {},
+  },
 };
 </script>
 
 <style scoped>
+div{
+  border-spacing: 0;
+}
 </style>

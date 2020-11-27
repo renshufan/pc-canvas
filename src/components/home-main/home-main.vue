@@ -4,7 +4,11 @@
       <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
         <el-menu :default-active="$route.path" router>
           <!-- 左侧菜单栏 -->
-          <sideTabBar v-for="(item, index) in router" :key="index" :row="item"></sideTabBar>
+          <sideTabBar
+            v-for="(item, index) in router"
+            :key="index"
+            :row="item"
+          ></sideTabBar>
         </el-menu>
       </el-aside>
       <el-container>
@@ -29,7 +33,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 import sideTabBar from "./sideTabBar";
 export default {
   name: "home-main",
