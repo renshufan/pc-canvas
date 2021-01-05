@@ -4,7 +4,7 @@
     <div>
       <img :src="src" alt="" width="150" height="150" />
     </div>
-    <a :href="src" class="src" download="下载">下载</a>
+    <a :href="src" class="src" download="下载">下载123</a>
   </div>
 </template>
 
