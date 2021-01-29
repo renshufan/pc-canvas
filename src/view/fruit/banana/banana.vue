@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>测试2222</span>
-    <span @click="doClick">香蕉1</span>
+    <span @click="doClick">香蕉11</span>
     <a href="javascript:0" ref="hrefs">
       这个链接点击之后不会做任何事情，如果去掉 void()，
       点击之后整个页面会被替换成一个字符 0。
