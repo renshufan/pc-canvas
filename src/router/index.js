@@ -1,8 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import routeChild from "./route-child";
-import HelloWorld from "@/components/HelloWorld";
-import card from "@/components/card";
 
 Vue.use(Router);
 
@@ -16,17 +14,6 @@ const router = new Router({
       meta: {
         keepAlive: true,
       },
-    },
-    {
-      path: "/HelloWorld",
-      name: "HelloWorld",
-      component: HelloWorld,
-      // redirect: '/card'
-    },
-    {
-      path: "/card",
-      name: "card",
-      component: card,
     },
   ],
 });

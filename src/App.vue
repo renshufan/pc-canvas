@@ -10,6 +10,10 @@
 <script>
 export default {
   name: "App",
+  mounted() {
+    // window.open('https://lz-file-service.oss-cn-hangzhou.aliyuncs.com/receiptPdf/1409758121597677569', '_self')
+    // location.href = 'https://lz-file-service.oss-cn-hangzhou.aliyuncs.com/receiptPdf/1409758121597677569'
+  }
 };
 </script>
 
